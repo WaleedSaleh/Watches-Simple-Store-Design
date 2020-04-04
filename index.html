@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <!-- CDN For connecting bbotstrap with the code -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/index-animation.css">
+</head>
+
+
+<!-- Spy scroll for the body -->
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+
+    <!-- Navbar shows the site parts -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="index.html">Watchers-for watches</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#homeSection">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#clientSection">Our Clients</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="#productSection" id="" role="button">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#aboutSection">About</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#contactUsSction">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- Home Section holds carousel -->
+    <section id="homeSection">
+        <div class="container-fluid  home" id="homeDiv">
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block" id="g-shock-slide" src="../images/slide_show/watch1.jpg" alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block" src="../images/slide_show/watch2.jpg" id="autodromo-slide" alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block" src="../images/slide_show/watch3.jpg" id="sisu-slide" alt="Third slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block" src="../images/slide_show/watch6.jpg" alt="Third slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block" sr..c="../images/slide_show/watch5.jpg" alt="Third slide">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- Client Section with the clients logos -->
+    <section id="clientSection">
+        <div class="container-fluid clients">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-lg-6 col-sm-6 0px" id="rolex-div">
+                        <img src="../images/logos/rolex-logo.png" id="rolex-clients" alt="Rolex-logo">
+                        <!-- MODAL Rolex-->
+                        <div class="modal fade" id="rolexModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Rolex</h5>
+                                    </div>
+                                    <div class="modal-body">
+                                        Do you want to vist the rolex website ?
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        <button type="button" id="rolexLink" class="btn btn-primary">Visit website</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ENDMODAL -->
+                    </div>
+                    <div class="col-lg-6 col-sm-6 0px" id="autodromo-div">
+                        <img src="../images/logos/autodromo-logo.png" id="autodromo-clients" alt="Autodromo-logo">
+                        <!-- MODAL Autodromo -->
+                        <div class="modal fade" id="autodromoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Autodromo</h5>
+                                    </div>
+                                    <div class="modal-body">
+                                        Do you want to vist Autodromo website ?
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        <button type="button" id="autodromoLink" class="btn btn-primary">Visit website</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ENDMODAL -->
+                    </div>
+                    <div class="col-lg-6 col-sm-6 0px " id="ripcurl-div">
+                        <img src="../images/logos/ripcurl-logo.png" id="ripcurl-clients" alt="Ripcurl-logo">
+                        <!-- MODAL Autodromo -->
+                        <div class="modal fade" id="ripcurlModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Ripcurl</h5>
+                                    </div>
+                                    <div class="modal-body">
+                                        Do you want to vist Autodromo website ?
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        <button type="button" id="ripcurlLink" class="btn btn-primary">Visit website</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ENDMODAL -->
+                    </div>
+                    <div class="col-lg-6 col-sm-6 0px" id="g-shock-div">
+                        <img src="../images/logos/G-SHOCK-logo.png" id="g-shock-clients" alt="G-SHOCK-logo">
+                        <!-- MODAL G-SHOCK -->
+                        <div class="modal fade" id="gShockModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">G-SHOCK</h5>
+                                    </div>
+                                    <div class="modal-body">
+                                        Do you want to vist Autodromo website ?
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        <button type="button" id="gShockLink" class="btn btn-primary">Visit website</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ENDMODAL -->
+                    </div>
+                    <div class="col-lg-6 col-sm-6 0px" id="swatch-div">
+                        <img src="../images/logos/swatch-logo.png" id="swatch-cleints" alt="Swatch-logo">
+                        <!-- MODAL Swatch -->
+                        <div class="modal fade" id="swatchModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Swatch</h5>
+                                    </div>
+                                    <div class="modal-body">
+                                        Do you want to vist Autodromo website ?
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        <button type="button" id="swatchLink" class="btn btn-primary">Visit website</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ENDMODAL -->
+                    </div>
+                    <div class="col-lg-6 col-sm-6 0px" id="cartier-div">
+                        <img src="../images/logos/carteir-logo.png" id="cartier-clients" alt="Carteir-logo">
+                        <!-- MODAL Cartier -->
+                        <div class="modal fade" id="cartierModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Cartier</h5>
+                                    </div>
+                                    <div class="modal-body">
+                                        Do you want to vist Autodromo website ?
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        <button type="button" id="cartierLink" class="btn btn-primary">Visit website</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ENDMODAL -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Animation Section with about info -->
+    <section id="productSection">
+        <div class="container product ">
+            <table class="table-bordered">
+                <tbody>
+                    <tr>
+                        <td>
+                            <img src="../images/products/rolex/rolex1.png" class="card-img-top" alt="Rolex">
+                        </td>
+                        <td>
+
+                            <img src="../images/products/rolex/rolex2.png" class="card-img-top" alt="Rolex">
+
+                        </td>
+                        <td>
+                            <img src="../images/products/rolex/rolex3.png" class="card-img-top" alt="Rolex">
+
+                        </td>
+                        <td>
+                            <img src="../images/products/ripcurl/ripcurl1.png" class="card-img-top" alt="Rolex">
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="../images/products/g-chock/g-shock2.png" class="card-img-top" alt="Rolex">
+                        </td>
+                        <td>
+                            <img src="../images/products/ripcurl/ripcurl2.png" class="card-img-top" alt="Rolex">
+                        </td>
+                        <td>
+                            <img src="../images/products/swatch/swatch3.png" class="card-img-top" alt="Rolex">
+                        </td>
+                        <td>
+                            <img src="../images/products/swatch/swatch1.png" class="card-img-top" alt="Rolex">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1">Previous</a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">Next</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+
+    <!-- Animation Section with about info -->
+    <section id="aboutSection">
+        <div class="container-fluid about">
+            <div class="watchers">
+                WATCHERS
+            </div>
+            <div class="container about-content">
+
+                <p>At watchers we are more than a store for watches. We believe that luxury isn't based only on a specific aspects of life, We admire watches and all brands. We want to spread to the middle east as much as we can from our past knowledge,
+                    to motivate people to always wear wealthy watches.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- This section is about the contact info -->
+    <section id="contactUsSction">
+        <footer>
+            <div class="container-fluid border contact-us">
+                <form action="/action_page.php">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                    <label for="country">Country</label>
+                    <select id="country" name="country">
+                        <option value="australia">Jordan</option>
+                      <option value="australia">Australia</option>
+                      <option value="canada">Canada</option>
+                      <option value="usa">USA</option>
+                    </select>
+                    <!-- Add the animation for the form (Fadeout and show message) -->
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="What do you think?" style="height:200px"></textarea>
+
+                    <input type="submit" value="Submit">
+                </form>
+
+            </div>
+
+    </section>
+    </footer>
+
+    <!-- JQuery and javascript libraries for bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="../js/index.js"></script>
+</body>
+
+</html>

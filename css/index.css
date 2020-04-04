@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-brand {
+    font-family: monospace;
+    font-size: 20px;
+}
+
+.carousel-item img {
+    vertical-align: middle;
+    border-style: none;
+    margin: 0 auto;
+}
+
+.about-content {
+    width: 40%;
+    font-size: 1.12em;
+    margin-top: 10px;
+}
+
+.about-content p {
+    text-align: start;
+    color: white;
+}
+
+.row div img {
+    margin: 0 auto;
+    display: block;
+}
+
+#g-shock-clients {
+    margin-top: 45px !important;
+}
+
+#autodromo-clients {
+    margin-top: 45px;
+}
+
+#homeSection {
+    padding-top: 50px;
+    height: 500px;
+}
+
+#clientSection {
+    padding-top: 150px;
+    height: 500px;
+}
+
+#productSection {
+    padding-top: 50px;
+    height: 500px;
+    background-color: #f8f9fa;
+}
+
+.product {
+    background-color: #f8f9fa;
+}
+
+#aboutSection {
+    background-image: url("/images/about-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 50px;
+    height: 500px !important;
+    margin-top: 110px;
+}
+
+#contactUsSction {
+    padding-top: 60px;
+    height: 300px;
+}
+
+
+/*Contact us form*/
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.contact-us {
+    width: 100%;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+
+/* Table */
+
+table {
+    margin: 0 auto;
+    padding: 10px;
+    height: 500px;
+}
+
+.card-body {
+    border-top: 1px solid lightgrey;
+}
+
+table tr td {
+    background-color: white;
+}
+
+
+/* Media query issues */
+
+@media(max-width:767px) {
+    #g-shock-slide {
+        margin-left: -55px;
+    }
+    #autodromo-slide {
+        margin-left: -55px;
+    }
+    #sisu-slide {
+        margin-left: -50px;
+    }
+    #productSection {
+        margin-top: 350px;
+    }
+}
