@@ -63,7 +63,7 @@ body {
 }
 
 #aboutSection {
-    background-image: url("images/about-background.jpg");
+    background-image: url("../images/about-background.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     padding-top: 50px;
